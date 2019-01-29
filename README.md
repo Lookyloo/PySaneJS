@@ -10,7 +10,7 @@ It is not super useful to use it like that, but you can give it a try:
 
 ```bash
 # You can pass a list of sha512
-sanejs --url http://0.0.0.0:5007 --sha512 908a25a227d1d6dd4397ddbf8ed19d58d092edd11f7dfbe89385e1f340211aed0ef7777edae3d3c1824f410949b7b9373753b83a3178b0f656fb97424bb20bc2
+sanejs --sha512 908a25a227d1d6dd4397ddbf8ed19d58d092edd11f7dfbe89385e1f340211aed0ef7777edae3d3c1824f410949b7b9373753b83a3178b0f656fb97424bb20bc2
 ```
 
 ```json
@@ -51,7 +51,7 @@ sanejs --url http://0.0.0.0:5007 --sha512 908a25a227d1d6dd4397ddbf8ed19d58d092ed
 
 
 ```bash
-sanejs --url http://0.0.0.0:5007 --library jquery-tools  # You can pass a list of tools
+sanejs --library jquery-tools  # You can pass a list of tools
 ```
 
 ```json

@@ -8,7 +8,7 @@ from typing import Union
 
 class SaneJS():
 
-    def __init__(self, root_url: str):
+    def __init__(self, root_url: str='https://sanejs.circl.lu/'):
         self.root_url = root_url
         self.session = requests.session()
 
