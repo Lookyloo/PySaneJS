@@ -14,8 +14,11 @@ class SaneJS():
 
     @property
     def is_up(self):
-        r = self.session.head(self.root_url)
-        return r.status_code == 200
+        try:
+            r = self.session.head(self.root_url)
+            return r.status_code == 200
+        except Exception:
+            return False
 
     def sha512(self, sha512: Union[str, list]):
         r = self.session.post(self.root_url, data=json.dumps({'sha512': sha512}))
