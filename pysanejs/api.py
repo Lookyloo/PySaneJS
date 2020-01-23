@@ -20,11 +20,11 @@ class SaneJS():
         except Exception:
             return False
 
-    def sha512(self, sha512: Union[str, list]):
+    def sha512(self, sha512: Union[str, list]) -> dict:
         r = self.session.post(self.root_url, data=json.dumps({'sha512': sha512}))
         return r.json()
 
-    def library(self, library: Union[str, list], version: str=None):
+    def library(self, library: Union[str, list], version: str=None) -> dict:
         to_query = {'library': library}
         if version:
             to_query['version'] = version
