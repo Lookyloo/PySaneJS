@@ -3,10 +3,8 @@
 
 from .api import SaneJS
 import argparse
-try:
-    import simplejson as json
-except ImportError:
-    import json
+import json
+
 
 def main():
     parser = argparse.ArgumentParser(description='Run a query against SaneJS')
