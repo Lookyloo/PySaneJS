@@ -5,14 +5,13 @@ from setuptools import setup  # type: ignore
 
 setup(
     name='pysanejs',
-    version='0.1',
+    version='1.0-dev',
     author='Raphaël Vinot',
     author_email='raphael.vinot@circl.lu',
     maintainer='Raphaël Vinot',
     url='https://github.com/CIRCL/sanejs/client',
     description='Python client for SaneJS',
     packages=['pysanejs'],
-    scripts=['bin/sanejs'],
     install_requires=['requests'],
     classifiers=[
         'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
