@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pysanejs"
-version = "1.1"
+version = "1.2"
 description = "Python client for SaneJS"
 authors = ["Raphaël Vinot <raphael@vinot.info>"]
 license = "AGPL-3.0-or-later"
@@ -8,7 +8,7 @@ repository = "https://github.com/CIRCL/PySaneJS"
 
 readme = "README.md"
 classifiers=[
-    'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+    'License :: OSI Approved :: BSD License',
     'Environment :: Console',
     'Intended Audience :: Science/Research',
     'Intended Audience :: Telecommunications Industry',

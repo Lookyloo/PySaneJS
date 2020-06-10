@@ -14,7 +14,7 @@ setup(
     packages=['pysanejs'],
     install_requires=['requests'],
     classifiers=[
-        'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+        'License :: OSI Approved :: BSD License',
         'Development Status :: 3 - Alpha',
         'Environment :: Console',
         'Operating System :: POSIX :: Linux',
