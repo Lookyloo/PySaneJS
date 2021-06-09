@@ -26,7 +26,8 @@ python = "^3.6"
 requests = "^2.25.0"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.812"
+mypy = "^0.901"
+types-requests = "^0.1.9"
 
 [build-system]
 requires = ["poetry_core>=1.0", "setuptools"]
