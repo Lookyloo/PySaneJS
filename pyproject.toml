@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pysanejs"
-version = "1.4"
+version = "1.5"
 description = "Python client for SaneJS"
 authors = ["Raphaël Vinot <raphael@vinot.info>"]
 license = "AGPL-3.0-or-later"
@@ -22,7 +22,7 @@ classifiers=[
 sanejs = "pysanejs:main"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.8"
 requests = "^2.26.0"
 
 [tool.poetry.dev-dependencies]
