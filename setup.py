@@ -5,7 +5,7 @@ from setuptools import setup  # type: ignore
 
 setup(
     name='pysanejs',
-    version='1.0-dev',
+    version='1.6-dev',
     author='Raphaël Vinot',
     author_email='raphael.vinot@circl.lu',
     maintainer='Raphaël Vinot',
