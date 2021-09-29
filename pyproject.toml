@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pysanejs"
-version = "1.5.1"
+version = "2.0"
 description = "Python client for SaneJS"
 authors = ["Raphaël Vinot <raphael@vinot.info>"]
 license = "AGPL-3.0-or-later"

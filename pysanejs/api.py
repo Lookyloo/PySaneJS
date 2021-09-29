@@ -29,7 +29,7 @@ class SaneJS():
               ]
             }
         '''
-        r = self.session.post(self.root_url, json={'sha512': sha512})
+        r = self.session.post(urljoin(self.root_url, 'sha512'), json={'sha512': sha512})
         return r.json()
 
     def library(self, library: Union[str, list], version: Optional[str]=None) -> Dict[str, Dict[str, Dict[str, Dict[str, str]]]]:
