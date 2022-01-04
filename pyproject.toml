@@ -23,7 +23,7 @@ sanejs = "pysanejs:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-requests = "^2.26.0"
+requests = "^2.27.0"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.930"
