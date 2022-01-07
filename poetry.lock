@@ -78,7 +78,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "types-requests"
-version = "2.26.3"
+version = "2.27.0"
 description = "Typing stubs for requests"
 category = "dev"
 optional = false
@@ -108,7 +108,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "b854d429127790fc7e9f90738f7bae866270379c43d57206839e3eaa50b14c29"
+content-hash = "9f49a97082980b247a6086c5754102da03d7b5500a46e3f5a6b7b14d7e9b190f"
 
 [metadata.files]
 certifi = [
@@ -158,8 +158,8 @@ tomli = [
     {file = "tomli-2.0.0.tar.gz", hash = "sha256:c292c34f58502a1eb2bbb9f5bbc9a5ebc37bee10ffb8c2d6bbdfa8eb13cc14e1"},
 ]
 types-requests = [
-    {file = "types-requests-2.26.3.tar.gz", hash = "sha256:d63fa617846dcefff5aa2d59e47ab4ffd806e4bb0567115f7adbb5e438302fe4"},
-    {file = "types_requests-2.26.3-py3-none-any.whl", hash = "sha256:ad18284931c5ddbf050ccdd138f200d18fd56f88aa3567019d8da9b2d4fe0344"},
+    {file = "types-requests-2.27.0.tar.gz", hash = "sha256:bc5ced0dcf0674e3f1f9ded734cee9fa45c57cf644b089e62c8fb12ca28eb215"},
+    {file = "types_requests-2.27.0-py3-none-any.whl", hash = "sha256:640f03c66e89a5077b4399e0bcfbe458a0330c46769a65ece806b28ad899a84b"},
 ]
 typing-extensions = [
     {file = "typing_extensions-4.0.1-py3-none-any.whl", hash = "sha256:7f001e5ac290a0c0401508864c7ec868be4e701886d5b573a9528ed3973d9d3b"},
