@@ -27,7 +27,7 @@ requests = "^2.27.1"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.960"
-types-requests = "^2.27.29"
+types-requests = "^2.27.30"
 
 [build-system]
 requires = ["poetry_core>=1.0", "setuptools"]
