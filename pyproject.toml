@@ -26,8 +26,8 @@ python = "^3.8"
 requests = "^2.28.2"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^0.991"
-types-requests = "^2.28.11.8"
+mypy = "^1.0.0"
+types-requests = "^2.28.11.12"
 
 [build-system]
 requires = ["poetry_core>=1.1", "setuptools"]
