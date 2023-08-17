@@ -23,12 +23,12 @@ sanejs = "pysanejs:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-requests = "^2.28.2"
+requests = "^2.31.0"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^1.1.1"
-types-requests = "^2.28.11.15"
+mypy = "^1.5.1"
+types-requests = "^2.31.0.2"
 
 [build-system]
-requires = ["poetry_core>=1.1", "setuptools"]
+requires = ["poetry_core"]
 build-backend = "poetry.core.masonry.api"
