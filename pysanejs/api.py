@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from urllib.parse import urljoin
-from typing import Union, Dict, List, Optional
 
 import requests
 
@@ -27,7 +26,7 @@ class SaneJS():
         except Exception:
             return False
 
-    def sha512(self, sha512: Union[str, list]) -> Dict[str, List[str]]:
+    def sha512(self, sha512: str | list) -> dict[str, list[str]]:
         '''Search for a hash (sha512)
         Reponse:
             {
@@ -40,7 +39,7 @@ class SaneJS():
         r = self.session.post(urljoin(self.root_url, 'sha512'), json={'sha512': sha512})
         return r.json()
 
-    def library(self, library: Union[str, list], version: Optional[str]=None) -> Dict[str, Dict[str, Dict[str, Dict[str, str]]]]:
+    def library(self, library: str | list, version: str | None=None) -> dict[str, dict[str, dict[str, dict[str, str]]]]:
         ''' Search for a library by name.
         Response:
             {
