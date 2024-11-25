@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-import requests
+
+from __future__ import annotations
+
 from urllib.parse import urljoin
 from typing import Union, Dict, List, Optional
+
+import requests
+
+from urllib3.util import Retry
+from requests.adapters import HTTPAdapter
 
 
 class SaneJS():
@@ -10,6 +16,8 @@ class SaneJS():
     def __init__(self, root_url: str='https://sanejs.circl.lu/'):
         self.root_url = root_url
         self.session = requests.session()
+        retries = Retry(total=5, backoff_factor=.1, status_forcelist=[500, 502, 503, 504])
+        self.session.mount('http://', HTTPAdapter(max_retries=retries))
 
     @property
     def is_up(self) -> bool:
