@@ -1,34 +1,38 @@
-[tool.poetry]
+[project]
 name = "pysanejs"
-version = "2.0.3"
+version = "2.0.4"
 description = "Python client for SaneJS"
-authors = ["Raphaël Vinot <raphael@vinot.info>"]
+authors = [{name="Raphaël Vinot", email="raphael@vinot.info"}]
 license = "AGPL-3.0-or-later"
-repository = "https://github.com/CIRCL/PySaneJS"
-
 readme = "README.md"
+requires-python = ">=3.9"
+
+dynamic = [ "classifiers" ]
+
+dependencies = [
+    "requests (>=2.32.3)"
+]
+
+[tool.poetry]
 classifiers=[
     'License :: OSI Approved :: BSD License',
     'Environment :: Console',
     'Intended Audience :: Science/Research',
     'Intended Audience :: Telecommunications Industry',
-    'Programming Language :: Python :: 3',
     'Topic :: Security',
     'Topic :: Internet',
 ]
 
+[project.urls]
+repository = "https://github.com/CIRCL/PySaneJS"
 
-[tool.poetry.scripts]
+[project.scripts]
 sanejs = "pysanejs:main"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-requests = "^2.32.3"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.14.1"
 types-requests = "^2.32.0.20241016"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0"]
 build-backend = "poetry.core.masonry.api"
