@@ -24,7 +24,7 @@ classifiers=[
 ]
 
 [project.urls]
-repository = "https://github.com/CIRCL/PySaneJS"
+repository = "https://github.com/Lookyloo/PySaneJS.git"
 
 [project.scripts]
 sanejs = "pysanejs:main"
